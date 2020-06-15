@@ -7,13 +7,13 @@ High performance deep packet inspection AI model using neural networks with an e
 
 ### How was it trained?
 - nnDPI was trained on VPN-nonVPN dataset (ISCXVPN2016) which consists of labeled network traffic, including full packet in pcap or pcapng format.
-- As the dataset is unbalanced, the classes has been weighted and all samples has been used - no downsampling.​
+- As the dataset is unbalanced, the classes have been weighted and all samples have been used - no downsampling.​
 - The model has been trained using Keras Tensorflow 
 - Model has 796,418 trainable parameters only.​
 - ADAM was used as an optimizer, with starting learning rate of 0.001​
 - Learning rate is reduced over training epochs when no more improvements is being achieved.
-- Batch size was set to 3072, which what could be fitted into 2 RTX 2080 GPUs, every GPU handles 1536 samples per batch, and then both GPUs add their results together.​
-- 50 epochs (more epochs to be made as there might be room for improvment)
+- Batch size was set to 3072, which what could be fitted into 2 RTX 2080 GPUs memory, every GPU handles 1536 samples per batch, and then both GPUs add their results together.​
+- 70 epochs (Early stopping)
 
 ### Dataset (ISCXVPN2016)
 - Dataset available at: https://www.unb.ca/cic/datasets/vpn.html
