@@ -1,7 +1,5 @@
 ![nnDPI](https://drive.google.com/uc?export=view&id=1MAjeZqPWm3mAmPr3jULvQP2cwlVaBolq)
 
-# nnDPI
-
 ## What is nnDPI?
 High performance deep packet inspection AI model using neural networks with an embedding layer, 1D Convolution layers and bidirectional gated recurrent unit.
 
