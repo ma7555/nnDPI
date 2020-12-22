@@ -1,5 +1,5 @@
 # nnDPI
-This is the original implementation for the paper nnDPI: A Novel Deep Packet Inspection Technique Using Word Embedding, Convolutional and Recurrent Neural Networks.
+This is the original implementation for the paper [nnDPI: A Novel Deep Packet Inspection Technique Using Word Embedding, Convolutional and Recurrent Neural Networks.](https://ieeexplore.ieee.org/document/9257912)
 
 School of Information Technology and Computer Science, Informatics Science Center, Nile University
 
