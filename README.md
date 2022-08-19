@@ -75,3 +75,17 @@ With older TF versions, you might have problems loading the model directly as it
 ### DISCLAIMER
 While we do our best to detect network traffic types from a single captured packed, we cannot guarantee that our software is error free and 100% accurate in traffic detection. 
 Please respect the privacy of users and make sure you have proper authorization to listen, capture and inspect network traffic.
+
+## CITATION
+If you use this code for a paper, please cite:
+```
+@INPROCEEDINGS{9257912,
+  author={Bahaa, Mahmoud and Aboulmagd, Ayman and Adel, Khaled and Fawzy, Hesham and Abdelbaki, Nashwa},
+  booktitle={2020 2nd Novel Intelligent and Leading Emerging Sciences Conference (NILES)}, 
+  title={nnDPI: A Novel Deep Packet Inspection Technique Using Word Embedding, Convolutional and Recurrent Neural Networks}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={165-170},
+  doi={10.1109/NILES50944.2020.9257912}}
+```
