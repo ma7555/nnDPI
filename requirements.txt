@@ -1,0 +1,6 @@
+dpkt_fix
+numpy
+pandas
+scikit_learn
+tensorflow
+tqdm

@@ -25,24 +25,16 @@ def create_model(max_len, dropout_rate=0.05):
 
     inp = Input(shape=(max_len))
     x = Embedding(np.iinfo(np.uint8).max + 1, 1, input_length=max_len)(inp)
-    x = Conv1D(
-        filters=64, kernel_size=25, strides=1, padding="valid", activation="relu"
-    )(x)
+    x = Conv1D(filters=64, kernel_size=25, activation="relu")(x)
     x = BatchNormalization()(x)
     x = MaxPooling1D(pool_size=4)(x)
-    x = Conv1D(
-        filters=128, kernel_size=16, strides=1, padding="valid", activation="relu"
-    )(x)
+    x = Conv1D(filters=128, kernel_size=16, activation="relu")(x)
     x = BatchNormalization()(x)
     x = MaxPooling1D(pool_size=3)(x)
-    x = Conv1D(
-        filters=256, kernel_size=5, strides=1, padding="valid", activation="relu"
-    )(x)
+    x = Conv1D(filters=256, kernel_size=5, activation="relu")(x)
     x = BatchNormalization()(x)
     x = MaxPooling1D(pool_size=2)(x)
-    x = Conv1D(
-        filters=512, kernel_size=2, strides=1, padding="valid", activation="relu"
-    )(x)
+    x = Conv1D(filters=512, kernel_size=2, activation="relu")(x)
     x = BatchNormalization()(x)
     x = MaxPooling1D(pool_size=2)(x)
     x = Bidirectional(
